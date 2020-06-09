@@ -1,0 +1,12 @@
+Flask
+flask-sqlalchemy
+Flask-WTF
+flask-migrate
+Flask-Table
+flask-blueprint
+flask-login
+Unidecode
+flask-script
+psycopg2
+gunicorn
+Flask-JSGlue
