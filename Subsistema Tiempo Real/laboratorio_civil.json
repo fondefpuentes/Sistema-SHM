@@ -1,0 +1,2529 @@
+{
+  "title": "Laboratorio Civil",
+  "configuration": {
+    "widgets": {
+      "55b0a00c-ca86-2a11-03c1-377cba8ad521": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"/dashboards/4cec5ad0-32e1-11ea-bdfd-871a13721be3?state=W3siaWQiOiJtZW51X3ByaW5jaXBhbCIsInBhcmFtcyI6e319LHsiaWQiOiJtZW51X2FjZWxlcl9tZXRyb3NfbGFib3JhdG9yaW8iLCJwYXJhbXMiOnsiZW50aXR5TmFtZSI6IiJ9fV0%3D\">\n   <div class=\"card2\"><center>\n     <h1>Acelerómetros</h1>\n     <p>Información en tiempo real de acelerómetros<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [],
+            "headerButton": []
+          }
+        },
+        "id": "55b0a00c-ca86-2a11-03c1-377cba8ad521"
+      },
+      "4a4a0545-d92a-bf82-ccda-4c85e8ed27e9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"/dashboards/4cec5ad0-32e1-11ea-bdfd-871a13721be3?state=W3siaWQiOiJtZW51X3ByaW5jaXBhbCIsInBhcmFtcyI6e319LHsiaWQiOiJsYWJfc3RyYWluX2dhdWdlIiwicGFyYW1zIjp7ImVudGl0eU5hbWUiOiIifX1d\">\n   <div class=\"card2\"><center>\n     <h1>Strain Gauges</h1>\n     <p>Información en tiempo real de Strain Gauges<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [],
+            "headerButton": []
+          }
+        },
+        "id": "4a4a0545-d92a-bf82-ccda-4c85e8ed27e9"
+      },
+      "760d29d5-5108-87db-f8e5-771e73936197": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 13,
+        "sizeY": 6,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                },
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7575638266961306
+                },
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.37312800183711303
+                }
+              ],
+              "entityAliasId": "190bf1a4-b564-2e45-20d5-bc1194fdd31f"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "fixedTimewindow": {
+                "startTimeMs": 1579660463180.3794,
+                "endTimeMs": 1579660480114.4722
+              },
+              "interval": 1000
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 50000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Gráfico Acelerómetro 1",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "760d29d5-5108-87db-f8e5-771e73936197"
+      },
+      "e82d9d41-c358-7c8b-e314-85e7cd54a874": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 13,
+        "sizeY": 6,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                },
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7575638266961306
+                },
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.37312800183711303
+                }
+              ],
+              "entityAliasId": "66634bda-4a9d-7217-c9fc-bfd1894155ec"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Grafico General",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "e82d9d41-c358-7c8b-e314-85e7cd54a874"
+      },
+      "12068b2d-faab-459e-1172-3f180270fcc8": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 13,
+        "sizeY": 6,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                },
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7575638266961306
+                },
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.37312800183711303
+                }
+              ],
+              "entityAliasId": "b19f83a4-a480-f116-79d5-1775cc4e324b"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Grafico General",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "12068b2d-faab-459e-1172-3f180270fcc8"
+      },
+      "bba3449c-797a-eeb9-51d1-adc819ebc328": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 13,
+        "sizeY": 9,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSearch": true,
+            "displayPagination": false,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "displayEntityName": true,
+            "displayEntityType": false,
+            "entitiesTitle": "Listado de Acelerómetros Tri-Axiales"
+          },
+          "title": "New Entities table",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.48558765376680113
+                },
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.48970900080126967
+                },
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.4864869949183095
+                }
+              ],
+              "entityAliasId": "3dbc4c64-748d-980f-56af-148913b75932"
+            }
+          ],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {
+            "rowClick": [
+              {
+                "id": "f62c1701-ff6b-b658-90d7-31e52c1e03cd",
+                "name": "fila",
+                "icon": "more_horiz",
+                "type": "custom",
+                "customFunction": "var $injector = widgetContext.$scope.$injector;\r\n\r\n$injector.get('deviceService').getDevice(entityId.id).then(function(device) {\r\n if(device.name == 'Lab_AC1') {\r\n  openDashboardState('lab_ac1');\r\n } else if(device.name == 'Lab_AC2') {\r\n  openDashboardState('lab_ac2');\r\n } else if(device.name == 'Lab_AC3') {\r\n  openDashboardState('lab_ac3');\r\n }\r\n});\r\n\r\nfunction openDashboardState(stateId) {\r\n var params = {\r\n entityId: entityId,\r\n entityName: entityName\r\n };\r\n\r\n widgetContext.stateController.openState(stateId, params, false);\r\n}"
+              }
+            ]
+          }
+        },
+        "id": "bba3449c-797a-eeb9-51d1-adc819ebc328"
+      },
+      "b9457d44-49fd-a9cd-84ef-ead04d096cb8": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 9,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime",
+            "alarmsTitle": "Alarmas Generales de Acelerómetros"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7888073842076309
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.1599339356120535
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#f44336",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.5468321344295193
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7373447566327469
+              }
+            ],
+            "entityAliasId": "af5aa976-09fa-7e58-79ff-94560c9cf373",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "b9457d44-49fd-a9cd-84ef-ead04d096cb8"
+      },
+      "ed455123-d064-32ab-a98e-79c274cee190": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7388215356070937
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.27798143870001035
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#f44336",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.44858104403268473
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.48204163396611777
+              }
+            ],
+            "entityAliasId": "190bf1a4-b564-2e45-20d5-bc1194fdd31f",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "ed455123-d064-32ab-a98e-79c274cee190"
+      },
+      "624654cf-3a4c-7cf9-4764-e0c7cbf86fa5": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.5892991831979628
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.8322852300740757
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#f44336",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7460684763256933
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.8036504566313061
+              }
+            ],
+            "entityAliasId": "66634bda-4a9d-7217-c9fc-bfd1894155ec",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "624654cf-3a4c-7cf9-4764-e0c7cbf86fa5"
+      },
+      "78189a0e-5478-636b-926d-e85a9c00ff2a": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.6867546903760076
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.8059602548604132
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#f44336",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.18040978389821016
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7242213157098301
+              }
+            ],
+            "entityAliasId": "b19f83a4-a480-f116-79d5-1775cc4e324b",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "78189a0e-5478-636b-926d-e85a9c00ff2a"
+      },
+      "2748b167-491f-edf6-b91c-978310c2dbf1": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 16,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "data",
+                  "type": "timeseries",
+                  "label": "Valor",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.18825556794525078
+                }
+              ],
+              "entityAliasId": "3555a64c-c7f9-1de2-2fe0-301517e86457"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Grafico General",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "2748b167-491f-edf6-b91c-978310c2dbf1"
+      },
+      "782ae76a-0207-6df7-3063-6a89cef46930": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 11,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.5101756726745257
+              },
+              {
+                "name": "type",
+                "type": "alarm",
+                "label": "Tipo",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.41461218605077055
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.28812297004834875
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.47076925095916944
+              }
+            ],
+            "entityAliasId": "3555a64c-c7f9-1de2-2fe0-301517e86457",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "782ae76a-0207-6df7-3063-6a89cef46930"
+      },
+      "f5a5255b-215a-a3be-e506-c829c793babf": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                }
+              ],
+              "entityAliasId": "190bf1a4-b564-2e45-20d5-bc1194fdd31f"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje X",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "f5a5255b-215a-a3be-e506-c829c793babf"
+      },
+      "caecf04e-d703-e19c-d4e0-ec5563607972": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7575638266961306
+                }
+              ],
+              "entityAliasId": "190bf1a4-b564-2e45-20d5-bc1194fdd31f"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Y",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "caecf04e-d703-e19c-d4e0-ec5563607972"
+      },
+      "6c28a00d-4038-70ce-e06a-89d5aa8931ba": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.37312800183711303
+                }
+              ],
+              "entityAliasId": "190bf1a4-b564-2e45-20d5-bc1194fdd31f"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Z",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "6c28a00d-4038-70ce-e06a-89d5aa8931ba"
+      },
+      "06a8ad42-1ec0-b89c-8b67-03314ab8d886": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                }
+              ],
+              "entityAliasId": "66634bda-4a9d-7217-c9fc-bfd1894155ec"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje X",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "06a8ad42-1ec0-b89c-8b67-03314ab8d886"
+      },
+      "23a174f3-61cf-c497-5279-75c16b142bb5": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "Eje Y",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7575638266961306
+                }
+              ],
+              "entityAliasId": "66634bda-4a9d-7217-c9fc-bfd1894155ec"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Y",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "23a174f3-61cf-c497-5279-75c16b142bb5"
+      },
+      "670617d9-5046-3d16-31b8-05d1a873765d": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "Eje Z",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.37312800183711303
+                }
+              ],
+              "entityAliasId": "66634bda-4a9d-7217-c9fc-bfd1894155ec"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Z",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "670617d9-5046-3d16-31b8-05d1a873765d"
+      },
+      "019a5016-8fda-592d-365c-f4923524f5ea": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataX",
+                  "type": "timeseries",
+                  "label": "Eje X",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.03790364037127236
+                }
+              ],
+              "entityAliasId": "b19f83a4-a480-f116-79d5-1775cc4e324b"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje X",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "019a5016-8fda-592d-365c-f4923524f5ea"
+      },
+      "62c4e89c-e154-01a7-35cd-11b02a71d447": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataY",
+                  "type": "timeseries",
+                  "label": "dataY",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.1645949069838033
+                }
+              ],
+              "entityAliasId": "b19f83a4-a480-f116-79d5-1775cc4e324b"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Y",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "62c4e89c-e154-01a7-35cd-11b02a71d447"
+      },
+      "bd7c4d74-e2ef-2039-d374-aa681b43e42a": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dataZ",
+                  "type": "timeseries",
+                  "label": "dataZ",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.20371188033677812
+                }
+              ],
+              "entityAliasId": "b19f83a4-a480-f116-79d5-1775cc4e324b"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Eje Z",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "bd7c4d74-e2ef-2039-d374-aa681b43e42a"
+      }
+    },
+    "states": {
+      "menu_principal": {
+        "name": "Menu Principal",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "55b0a00c-ca86-2a11-03c1-377cba8ad521": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 0,
+                "col": 0
+              },
+              "4a4a0545-d92a-bf82-ccda-4c85e8ed27e9": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 0,
+                "col": 10
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "menu_aceler_metros_laboratorio": {
+        "name": "Menu Acelerómetros Laboratorio",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "bba3449c-797a-eeb9-51d1-adc819ebc328": {
+                "sizeX": 13,
+                "sizeY": 9,
+                "row": 0,
+                "col": 0
+              },
+              "b9457d44-49fd-a9cd-84ef-ead04d096cb8": {
+                "sizeX": 11,
+                "sizeY": 9,
+                "row": 0,
+                "col": 13
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "lab_ac1": {
+        "name": "LAB AC1",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "760d29d5-5108-87db-f8e5-771e73936197": {
+                "sizeX": 13,
+                "sizeY": 6,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "ed455123-d064-32ab-a98e-79c274cee190": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 0,
+                "col": 13
+              },
+              "f5a5255b-215a-a3be-e506-c829c793babf": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 0
+              },
+              "caecf04e-d703-e19c-d4e0-ec5563607972": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 8
+              },
+              "6c28a00d-4038-70ce-e06a-89d5aa8931ba": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "lab_ac2": {
+        "name": "LAB AC2",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "e82d9d41-c358-7c8b-e314-85e7cd54a874": {
+                "sizeX": 13,
+                "sizeY": 6,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "624654cf-3a4c-7cf9-4764-e0c7cbf86fa5": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 0,
+                "col": 13
+              },
+              "06a8ad42-1ec0-b89c-8b67-03314ab8d886": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 0
+              },
+              "23a174f3-61cf-c497-5279-75c16b142bb5": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 8
+              },
+              "670617d9-5046-3d16-31b8-05d1a873765d": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "lab_ac3": {
+        "name": "LAB AC3",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "12068b2d-faab-459e-1172-3f180270fcc8": {
+                "sizeX": 13,
+                "sizeY": 6,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "78189a0e-5478-636b-926d-e85a9c00ff2a": {
+                "sizeX": 11,
+                "sizeY": 6,
+                "row": 0,
+                "col": 13
+              },
+              "019a5016-8fda-592d-365c-f4923524f5ea": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 0
+              },
+              "62c4e89c-e154-01a7-35cd-11b02a71d447": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 8
+              },
+              "bd7c4d74-e2ef-2039-d374-aa681b43e42a": {
+                "sizeX": 8,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 6,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "lab_strain_gauge": {
+        "name": "LAB STRAIN GAUGE",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "2748b167-491f-edf6-b91c-978310c2dbf1": {
+                "sizeX": 16,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "782ae76a-0207-6df7-3063-6a89cef46930": {
+                "sizeX": 8,
+                "sizeY": 11,
+                "row": 0,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "2f9d3d51-7461-7f8c-c112-75f6103fdbe7": {
+        "id": "2f9d3d51-7461-7f8c-c112-75f6103fdbe7",
+        "alias": "Eje Z",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "767e3f30-32eb-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "190bf1a4-b564-2e45-20d5-bc1194fdd31f": {
+        "id": "190bf1a4-b564-2e45-20d5-bc1194fdd31f",
+        "alias": "AC1Lab",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "dc933a20-3b9a-11ea-a24a-49b5ef23a8cf"
+          }
+        }
+      },
+      "66634bda-4a9d-7217-c9fc-bfd1894155ec": {
+        "id": "66634bda-4a9d-7217-c9fc-bfd1894155ec",
+        "alias": "AC2Lab",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "dc9c13c0-3b9a-11ea-a24a-49b5ef23a8cf"
+          }
+        }
+      },
+      "b19f83a4-a480-f116-79d5-1775cc4e324b": {
+        "id": "b19f83a4-a480-f116-79d5-1775cc4e324b",
+        "alias": "AC3Lab",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "dc9a3f00-3b9a-11ea-a24a-49b5ef23a8cf"
+          }
+        }
+      },
+      "3dbc4c64-748d-980f-56af-148913b75932": {
+        "id": "3dbc4c64-748d-980f-56af-148913b75932",
+        "alias": "AcelerometrosLab",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "dc933a20-3b9a-11ea-a24a-49b5ef23a8cf",
+            "dc9c13c0-3b9a-11ea-a24a-49b5ef23a8cf",
+            "dc9a3f00-3b9a-11ea-a24a-49b5ef23a8cf"
+          ]
+        }
+      },
+      "3555a64c-c7f9-1de2-2fe0-301517e86457": {
+        "id": "3555a64c-c7f9-1de2-2fe0-301517e86457",
+        "alias": "SG1Lab",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "dc9dc170-3b9a-11ea-a24a-49b5ef23a8cf"
+          }
+        }
+      },
+      "af5aa976-09fa-7e58-79ff-94560c9cf373": {
+        "id": "af5aa976-09fa-7e58-79ff-94560c9cf373",
+        "alias": "DAQLAB",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "7aac3d00-32e1-11ea-bdfd-871a13721be3"
+          ]
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "hideInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1578495859485,
+          "endTimeMs": 1578582259485
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Laboratorio Civil"
+}

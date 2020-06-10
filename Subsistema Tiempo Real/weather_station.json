@@ -1,0 +1,130 @@
+{
+  "ruleChain": {
+    "additionalInfo": null,
+    "name": "Weather Station",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": 1,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "layoutX": 621,
+          "layoutY": 24
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Temperatura D",
+        "debugMode": false,
+        "configuration": {
+          "alarmType": "General Alarm",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 349,
+          "layoutY": 151
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro Temperatura",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "return msg.temperatura > 30;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 619,
+          "layoutY": 305
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Temperatura C",
+        "debugMode": false,
+        "configuration": {
+          "alarmType": "General Alarm",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "severity": "CRITICAL",
+          "propagate": false,
+          "useMessageAlarmData": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 729,
+          "layoutY": 151
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro Humedad",
+        "debugMode": false,
+        "configuration": {
+          "jsScript": "return msg.humedad > 80;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 1015,
+          "layoutY": 31
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Humedad D",
+        "debugMode": false,
+        "configuration": {
+          "alarmType": "General Alarm",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 1014,
+          "layoutY": 305
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Humedad C",
+        "debugMode": false,
+        "configuration": {
+          "alarmType": "General Alarm",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\nreturn details;",
+          "severity": "CRITICAL",
+          "propagate": false,
+          "useMessageAlarmData": false
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 1,
+        "toIndex": 2,
+        "type": "True"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 3,
+        "type": "False"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 3,
+        "type": "True"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 0,
+        "type": "False"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 5,
+        "type": "True"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 4,
+        "type": "False"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

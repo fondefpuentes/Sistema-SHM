@@ -1,0 +1,191 @@
+{
+  "ruleChain": {
+    "additionalInfo": null,
+    "name": "AcelerometrosLab",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": 5,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "layoutX": 827,
+          "layoutY": 278
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Acelerómetro LabY Del",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\ndetails.rango = msg.dato;\n\nreturn details;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 1102,
+          "layoutY": 278
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Acelerómetro LabZ DEL",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\ndetails.rango = msg.dato;\n\nreturn details;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 827,
+          "layoutY": 29
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Acelerómetro LabY",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\r\ndetails.dato = msg.dato;\r\ndetails.deviceName = metadata.deviceName;\r\n\r\nif (metadata.prevAlarmDetails) {\r\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\r\n    details.count = prevDetails.count + 1;\r\n} else {\r\n    details.count = 1;\r\n}\r\n\r\nreturn details;",
+          "severity": "WARNING",
+          "propagate": true,
+          "useMessageAlarmData": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 1104,
+          "layoutY": 27
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Acelerómetro LabZ",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\r\ndetails.dato = msg.dato;\r\ndetails.deviceName = metadata.deviceName;\r\n\r\nif (metadata.prevAlarmDetails) {\r\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\r\n    details.count = prevDetails.count + 1;\r\n} else {\r\n    details.count = 1;\r\n}\r\n\r\nreturn details;",
+          "severity": "WARNING",
+          "propagate": true,
+          "useMessageAlarmData": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 827,
+          "layoutY": 152
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro Z",
+        "debugMode": true,
+        "configuration": {
+          "jsScript": "return msg.dataY > 1.26 || msg.dataY < -1.26;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 284,
+          "layoutY": 149
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro X",
+        "debugMode": true,
+        "configuration": {
+          "jsScript": "return msg.dataX > 0.9 || msg.dataX < 0.9;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 552,
+          "layoutY": 28
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Acelerómetro LabX",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\r\ndetails.dato = msg.dato;\r\ndetails.deviceName = metadata.deviceName;\r\n\r\nif (metadata.prevAlarmDetails) {\r\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\r\n    details.count = prevDetails.count + 1;\r\n} else {\r\n    details.count = 1;\r\n}\r\n\r\nreturn details;",
+          "severity": "WARNING",
+          "propagate": true,
+          "useMessageAlarmData": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 549,
+          "layoutY": 278
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Acelerómetro LabX Del",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\ndetails.rango = msg.dato;\n\nreturn details;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 552,
+          "layoutY": 153
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro Y",
+        "debugMode": true,
+        "configuration": {
+          "jsScript": "return msg.dataY > 0.9 || msg.dataY < -0.9;"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 4,
+        "toIndex": 3,
+        "type": "True"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 1,
+        "type": "False"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 8,
+        "type": "False"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 8,
+        "type": "True"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 7,
+        "type": "False"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 6,
+        "type": "True"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 2,
+        "type": "True"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 0,
+        "type": "False"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 4,
+        "type": "True"
+      },
+      {
+        "fromIndex": 8,
+        "toIndex": 4,
+        "type": "False"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

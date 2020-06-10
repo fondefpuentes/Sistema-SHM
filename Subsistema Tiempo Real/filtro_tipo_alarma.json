@@ -1,0 +1,69 @@
+{
+  "ruleChain": {
+    "additionalInfo": null,
+    "name": "Filtro Tipo Alarma",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "layoutX": 335,
+          "layoutY": 150
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsSwitchNode",
+        "name": "Switch Alarmas",
+        "debugMode": true,
+        "configuration": {
+          "jsScript": "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(metadata.deviceName === 'AC1') {\n    return ['one'];\n}\nif(metadata.deviceName === 'AC2') {\n    return ['one'];\n}\nif(metadata.deviceName === 'AC3') {\n    return ['one'];\n}\nif(metadata.deviceName === 'AC4') {\n    return ['one'];\n}\nif(metadata.deviceName === 'Weather Station') {\n    return ['two'];\n}\nif(metadata.deviceName === 'LAB_AC1') {\n    return ['nine'];\n}\nif(metadata.deviceName === 'LAB_AC2') {\n    return ['nine'];\n}\nif(metadata.deviceName === 'LAB_AC3') {\n    return ['nine'];\n}\nif(metadata.deviceName === 'LAB_SG1') {\n    return ['four'];\n}\nreturn nextRelation(metadata, msg);"
+        }
+      }
+    ],
+    "connections": null,
+    "ruleChainConnections": [
+      {
+        "fromIndex": 0,
+        "targetRuleChainId": {
+          "entityType": "RULE_CHAIN",
+          "id": "6293eb20-22a9-11ea-bdfd-871a13721be3"
+        },
+        "additionalInfo": {
+          "layoutX": 620,
+          "layoutY": 82,
+          "ruleChainNodeId": "rule-chain-node-5"
+        },
+        "type": "one"
+      },
+      {
+        "fromIndex": 0,
+        "targetRuleChainId": {
+          "entityType": "RULE_CHAIN",
+          "id": "c4e179f0-22a9-11ea-bdfd-871a13721be3"
+        },
+        "additionalInfo": {
+          "layoutX": 622,
+          "layoutY": 149,
+          "ruleChainNodeId": "rule-chain-node-4"
+        },
+        "type": "two"
+      },
+      {
+        "fromIndex": 0,
+        "targetRuleChainId": {
+          "entityType": "RULE_CHAIN",
+          "id": "ad973b30-3baa-11ea-a24a-49b5ef23a8cf"
+        },
+        "additionalInfo": {
+          "layoutX": 622,
+          "layoutY": 213,
+          "ruleChainNodeId": "rule-chain-node-3"
+        },
+        "type": "nine"
+      }
+    ]
+  }
+}

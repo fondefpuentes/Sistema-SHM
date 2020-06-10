@@ -1,0 +1,69 @@
+{
+  "ruleChain": {
+    "additionalInfo": null,
+    "name": "AcelerometrosChinos",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": false,
+    "configuration": null
+  },
+  "metadata": {
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "additionalInfo": {
+          "layoutX": 319,
+          "layoutY": 151
+        },
+        "type": "org.thingsboard.rule.engine.filter.TbJsFilterNode",
+        "name": "Filtro Alarma",
+        "debugMode": true,
+        "configuration": {
+          "jsScript": "return msg.dato > 0.2 || msg.dato < -0.2;"
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 620,
+          "layoutY": 87
+        },
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Alarma Acelerometro C",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\r\ndetails.dato = msg.dato;\r\ndetails.deviceName = metadata.deviceName;\r\n\r\nif (metadata.prevAlarmDetails) {\r\n    var prevDetails = JSON.parse(metadata.prevAlarmDetails);\r\n    details.count = prevDetails.count + 1;\r\n} else {\r\n    details.count = 1;\r\n}\r\n\r\nreturn details;",
+          "severity": "WARNING",
+          "propagate": true,
+          "useMessageAlarmData": false
+        }
+      },
+      {
+        "additionalInfo": {
+          "layoutX": 620,
+          "layoutY": 205
+        },
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Alarma Acelerometro D",
+        "debugMode": true,
+        "configuration": {
+          "alarmType": "Fuera de Rango",
+          "alarmDetailsBuildJs": "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n}\ndetails.rango = msg.dato;\n\nreturn details;"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 2,
+        "type": "False"
+      },
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "True"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

@@ -1,0 +1,2365 @@
+{
+  "title": "Puente Chino",
+  "configuration": {
+    "description": "Tiempo real acelerometros",
+    "widgets": {
+      "6b6760a9-48d7-fe1a-a7fa-f2fc30a80398": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "Timeseries - Flot",
+        "sizeX": 17,
+        "sizeY": 5,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "dbcea604-b334-8808-dff3-612f0fed4274",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "dato",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.040366997198054144
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "tickDecimals": 3
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Gráfico Acelerómetro 4",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": "more_horiz",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "6b6760a9-48d7-fe1a-a7fa-f2fc30a80398"
+      },
+      "5c0b8758-cd7e-9365-1304-659e0c21defc": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "Timeseries - Flot",
+        "sizeX": 17,
+        "sizeY": 5,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "8e80782f-60e4-2f10-365f-69fcb4c58e59",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "dato",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "tooltipValueFormatter": "",
+                    "showSeparateAxis": false,
+                    "axisTitle": "",
+                    "axisPosition": "left",
+                    "axisTicksFormatter": ""
+                  },
+                  "_hash": 0.9354603130386702
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "tickDecimals": 3
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Gráfico Acelerómetro 3",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": "more_horiz",
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "5c0b8758-cd7e-9365-1304-659e0c21defc"
+      },
+      "8de9e1c2-3bac-eed1-27a7-72af54a2cdd7": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"/dashboards/4f0f0e60-1311-11ea-bdfd-871a13721be3?state=W3siaWQiOiJkZWZhdWx0IiwicGFyYW1zIjp7fX0seyJpZCI6Im1lbnVfYWNlbGVyb21ldHJvcyIsInBhcmFtcyI6eyJlbnRpdHlOYW1lIjoiIn19XQ%3D%3D\">\n   <div class=\"card2\"><center>\n     <h1>Acelerómetros</h1>\n     <p>Información en tiempo real de acelerómetros<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [
+              {
+                "id": "a64ad8a3-ccb6-2851-05e7-1c1292a9baf8",
+                "name": "menu_uniaxiales",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "acelerometro_1",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "id": "8de9e1c2-3bac-eed1-27a7-72af54a2cdd7"
+      },
+      "be1e7c6e-9abf-260b-8c0a-142633a112b2": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"/dashboards/4f0f0e60-1311-11ea-bdfd-871a13721be3?state=W3siaWQiOiJkZWZhdWx0IiwicGFyYW1zIjp7fX0seyJpZCI6ImVzdGFjaW9uX2NsaW1hdGljYSIsInBhcmFtcyI6eyJlbnRpdHlOYW1lIjoiIn19XQ%3D%3D\">\n   <div class=\"card2\"><center>\n     <h1>Estación Climática</h1>\n     <p>Información en tiempo real de temperatura, humedad, velocidad y dirección del viento<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [
+              {
+                "id": "a64ad8a3-ccb6-2851-05e7-1c1292a9baf8",
+                "name": "menu_uniaxiales",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "acelerometro_1",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "id": "be1e7c6e-9abf-260b-8c0a-142633a112b2"
+      },
+      "8e5265f0-de95-e967-e2ba-d0b7ea69eb33": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "temperatura",
+                  "type": "timeseries",
+                  "label": "temperatura",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.1819922884163877
+                }
+              ],
+              "entityAliasId": "10f3242b-3ca4-4d06-c52a-399fa9f45d76"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 100,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#999999"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 36,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#666666"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 0,
+            "gaugeColor": "#eeeeee",
+            "showTitle": true,
+            "gaugeType": "arc",
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear",
+            "minValue": 0
+          },
+          "title": "Temperatura",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "units": "°C"
+        },
+        "id": "8e5265f0-de95-e967-e2ba-d0b7ea69eb33"
+      },
+      "1f77bd71-2403-a319-047c-06e33d0aa62a": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "lcd_bar_gauge",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "humedad",
+                  "type": "timeseries",
+                  "label": "humedad",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8029515983480916
+                }
+              ],
+              "entityAliasId": "10f3242b-3ca4-4d06-c52a-399fa9f45d76"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#babab2",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 100,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "400",
+              "size": 16
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 1.5,
+            "showUnitTitle": true,
+            "defaultColor": "#444444",
+            "gaugeType": "arc",
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear"
+          },
+          "title": "Humedad",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "units": "%"
+        },
+        "id": "1f77bd71-2403-a319-047c-06e33d0aa62a"
+      },
+      "9bf896dd-f1b1-c89c-5253-884a50574a23": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 14,
+        "sizeY": 8,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarmas",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.21006702688794732
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.5422948312332809
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {},
+                "_hash": 0.5196820733072637
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {},
+                "_hash": 0.44566564155940613
+              }
+            ],
+            "entityAliasId": "10f3242b-3ca4-4d06-c52a-399fa9f45d76",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "9bf896dd-f1b1-c89c-5253-884a50574a23"
+      },
+      "59bd1764-a78c-8811-42b1-c14d7bc3bb05": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 16,
+        "sizeY": 7,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime"
+          },
+          "title": "Alarma General Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.07964923900839582
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.557918699328285
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#f44336",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.2087347134361781
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#ffc107",
+                "settings": {
+                  "columnWidth": "0px",
+                  "useCellStyleFunction": false,
+                  "cellStyleFunction": "",
+                  "useCellContentFunction": false,
+                  "cellContentFunction": ""
+                },
+                "_hash": 0.7095496720161241
+              }
+            ],
+            "entityAliasId": "aa3d9eda-f512-20bf-0595-6f51aaaf516a",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 1,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "59bd1764-a78c-8811-42b1-c14d7bc3bb05"
+      },
+      "39cdf1b6-b705-6283-dc7d-94614ca86d38": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 16,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC1",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.07238138459300503
+                }
+              ],
+              "entityAliasId": "ccf2748e-8830-43ab-4fde-b9da93c5ab6c"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC2",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.5533788844105955
+                }
+              ],
+              "entityAliasId": "e2ca1316-9c6c-2843-9146-975df0febbb0"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC3",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.4196003314867367
+                }
+              ],
+              "entityAliasId": "8e80782f-60e4-2f10-365f-69fcb4c58e59"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC4",
+                  "color": "#ffc107",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.39742991328345945
+                }
+              ],
+              "entityAliasId": "dbcea604-b334-8808-dff3-612f0fed4274"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Grafico General",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {},
+          "units": "m/s²"
+        },
+        "id": "39cdf1b6-b705-6283-dc7d-94614ca86d38"
+      },
+      "41ab0959-d70a-c99b-e828-ad4646b7dd47": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 19,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime",
+            "alarmsTitle": "Alarmas de Acelerómetro 1"
+          },
+          "title": "Alarma Acelerometro 1",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.5158452765420127
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.5407867125822248
+              },
+              {
+                "name": "type",
+                "type": "alarm",
+                "label": "Tipo",
+                "color": "#f44336",
+                "settings": {},
+                "_hash": 0.3952054285086395
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {},
+                "_hash": 0.34454974132097105
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {},
+                "_hash": 0.25869244296691707
+              }
+            ],
+            "entityAliasId": "ccf2748e-8830-43ab-4fde-b9da93c5ab6c",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "41ab0959-d70a-c99b-e828-ad4646b7dd47"
+      },
+      "03a7e139-5477-5672-8491-2c6b116c28aa": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 17,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime",
+            "alarmsTitle": "Alarmas Acelerómetro 2"
+          },
+          "title": "New Alarms table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.5158452765420127
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.5407867125822248
+              },
+              {
+                "name": "type",
+                "type": "alarm",
+                "label": "Tipo",
+                "color": "#f44336",
+                "settings": {},
+                "_hash": 0.3952054285086395
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {},
+                "_hash": 0.34454974132097105
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {},
+                "_hash": 0.25869244296691707
+              }
+            ],
+            "entityAliasId": "e2ca1316-9c6c-2843-9146-975df0febbb0",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "03a7e139-5477-5672-8491-2c6b116c28aa"
+      },
+      "568cfa04-5090-fe83-3c83-b431461fe236": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 17,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime",
+            "alarmsTitle": "Alarmas Acelerómetro 3"
+          },
+          "title": "New Alarms table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.5158452765420127
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.5407867125822248
+              },
+              {
+                "name": "type",
+                "type": "alarm",
+                "label": "Tipo",
+                "color": "#f44336",
+                "settings": {},
+                "_hash": 0.3952054285086395
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {},
+                "_hash": 0.34454974132097105
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {},
+                "_hash": 0.25869244296691707
+              }
+            ],
+            "entityAliasId": "8e80782f-60e4-2f10-365f-69fcb4c58e59",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "568cfa04-5090-fe83-3c83-b431461fe236"
+      },
+      "f886fa7f-899d-817f-e06e-f7c55ef8e8d1": {
+        "isSystemType": true,
+        "bundleAlias": "alarm_widgets",
+        "typeAlias": "alarms_table",
+        "type": "alarm",
+        "title": "New widget",
+        "sizeX": 17,
+        "sizeY": 6,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSelection": true,
+            "enableSearch": true,
+            "displayDetails": true,
+            "allowAcknowledgment": true,
+            "allowClear": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "-createdTime",
+            "alarmsTitle": "Alarmas Acelerómetro 4"
+          },
+          "title": "New Alarms table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "alarmSource": {
+            "type": "entity",
+            "dataKeys": [
+              {
+                "name": "createdTime",
+                "type": "alarm",
+                "label": "Tiempo de creación",
+                "color": "#2196f3",
+                "settings": {},
+                "_hash": 0.5158452765420127
+              },
+              {
+                "name": "originator",
+                "type": "alarm",
+                "label": "Origen",
+                "color": "#4caf50",
+                "settings": {},
+                "_hash": 0.5407867125822248
+              },
+              {
+                "name": "type",
+                "type": "alarm",
+                "label": "Tipo",
+                "color": "#f44336",
+                "settings": {},
+                "_hash": 0.3952054285086395
+              },
+              {
+                "name": "severity",
+                "type": "alarm",
+                "label": "Criticidad",
+                "color": "#ffc107",
+                "settings": {},
+                "_hash": 0.34454974132097105
+              },
+              {
+                "name": "status",
+                "type": "alarm",
+                "label": "Estado",
+                "color": "#607d8b",
+                "settings": {},
+                "_hash": 0.25869244296691707
+              }
+            ],
+            "entityAliasId": "dbcea604-b334-8808-dff3-612f0fed4274",
+            "name": "alarms"
+          },
+          "alarmSearchStatus": "ANY",
+          "alarmsPollingInterval": 5,
+          "datasources": [],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {}
+        },
+        "id": "f886fa7f-899d-817f-e06e-f7c55ef8e8d1"
+      },
+      "d6bac0b4-984d-96f4-b590-ebfe3ba39dfd": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 19,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC1",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.07238138459300503
+                }
+              ],
+              "entityAliasId": "ccf2748e-8830-43ab-4fde-b9da93c5ab6c"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Gráfico Acelerómetro 1",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "d6bac0b4-984d-96f4-b590-ebfe3ba39dfd"
+      },
+      "fcafc31b-069f-7de0-9778-4581973fd3c9": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 17,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "AC2",
+                  "color": "#4caf50",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showPointsRadius": 3,
+                    "showSeparateAxis": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.5533788844105955
+                }
+              ],
+              "entityAliasId": "e2ca1316-9c6c-2843-9146-975df0febbb0"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Tiempo"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Valor",
+              "tickDecimals": 4
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": false
+          },
+          "title": "Gráfico Acelerómetro 2",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "mobileHeight": null,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "fcafc31b-069f-7de0-9778-4581973fd3c9"
+      },
+      "931d839d-a85b-72de-3778-c69c9d586eea": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 7,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSearch": true,
+            "displayPagination": false,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "displayEntityName": true,
+            "displayEntityType": false,
+            "entitiesTitle": "Listado de Acelerometros",
+            "entityNameColumnTitle": "Nombre"
+          },
+          "title": "Listado de Acelerometros",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dato",
+                  "type": "timeseries",
+                  "label": "Dato Capturado",
+                  "color": "#2196f3",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.771486480597231
+                }
+              ],
+              "entityAliasId": "292c52d6-9f4d-dc2d-86a3-76200208c60c"
+            }
+          ],
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "displayTimewindow": true,
+          "actions": {
+            "rowClick": [
+              {
+                "id": "67f342e6-0b73-26cc-ee2d-11abb74cf4c4",
+                "name": "navegar",
+                "icon": "more_horiz",
+                "type": "custom",
+                "customFunction": "var $injector = widgetContext.$scope.$injector;\r\n\r\n$injector.get('deviceService').getDevice(entityId.id).then(function(device) {\r\n if(device.name == 'AC1') {\r\n  openDashboardState('acelerometro_1');\r\n } else if(device.name == 'AC2') {\r\n  openDashboardState('acelerometro_2');\r\n } else if(device.name == 'AC3') {\r\n  openDashboardState('acelerometro_3');\r\n } else if(device.name == 'AC4') {\r\n  openDashboardState('acelerometro_4');\r\n }\r\n});\r\n\r\nfunction openDashboardState(stateId) {\r\n var params = {\r\n entityId: entityId,\r\n entityName: entityName\r\n };\r\n\r\n widgetContext.stateController.openState(stateId, params, false);\r\n}"
+              }
+            ]
+          },
+          "units": "m/s²"
+        },
+        "id": "931d839d-a85b-72de-3778-c69c9d586eea"
+      },
+      "6b43a889-a05f-6abd-b36f-b5775208e9d3": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"#\">\n   <div class=\"card2\"><center>\n     <h1>LVDT</h1>\n     <p>Información en tiempo real de transformadores diferenciales de variación lineal<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [
+              {
+                "id": "a64ad8a3-ccb6-2851-05e7-1c1292a9baf8",
+                "name": "menu_uniaxiales",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "acelerometro_1",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "id": "6b43a889-a05f-6abd-b36f-b5775208e9d3"
+      },
+      "89fbcc1d-c92b-e36f-d905-7cbcab7a4530": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"#\">\n   <div class=\"card2\"><center>\n     <h1>Inclinómetros</h1>\n     <p>Información en tiempo real de Inclinómetros<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [
+              {
+                "id": "a64ad8a3-ccb6-2851-05e7-1c1292a9baf8",
+                "name": "menu_uniaxiales",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "acelerometro_1",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "id": "89fbcc1d-c92b-e36f-d905-7cbcab7a4530"
+      },
+      "fd5378bf-3f8a-f890-c945-f97cb7bdb917": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}",
+            "cardHtml": " <a href=\"#\">\n   <div class=\"card2\"><center>\n     <h1>Strain Gauges</h1>\n     <p>Información en tiempo real de Strain Gauges<p>\n    </center>\n   </div>\n </a>"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "elementClick": [
+              {
+                "id": "a64ad8a3-ccb6-2851-05e7-1c1292a9baf8",
+                "name": "menu_uniaxiales",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "acelerometro_1",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "id": "fd5378bf-3f8a-f890-c945-f97cb7bdb917"
+      },
+      "a5eceeef-60a0-4e50-9626-0d84d0c01f56": {
+        "isSystemType": true,
+        "bundleAlias": "analogue_gauges",
+        "typeAlias": "analogue_compass",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "humedad",
+                  "type": "timeseries",
+                  "label": "humedad",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3314782825234194
+                }
+              ],
+              "entityAliasId": "10f3242b-3ca4-4d06-c52a-399fa9f45d76"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "minorTicks": 22,
+            "needleCircleSize": 15,
+            "showBorder": true,
+            "borderOuterWidth": 10,
+            "colorPlate": "#222",
+            "colorMajorTicks": "#f5f5f5",
+            "colorMinorTicks": "#ddd",
+            "colorNeedle": "#f08080",
+            "colorNeedleCircle": "#e8e8e8",
+            "colorBorder": "#ccc",
+            "majorTickFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "color": "#ccc",
+              "size": 20
+            },
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "cycle",
+            "animationTarget": "needle",
+            "majorTicks": [
+              "N",
+              "NE",
+              "E",
+              "SE",
+              "S",
+              "SW",
+              "W",
+              "NW"
+            ]
+          },
+          "title": "Dirección Viento",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "displayTimewindow": true
+        },
+        "id": "a5eceeef-60a0-4e50-9626-0d84d0c01f56"
+      },
+      "b01bd33b-271b-c6f6-98f0-478cc8831f5b": {
+        "isSystemType": true,
+        "bundleAlias": "analogue_gauges",
+        "typeAlias": "speed_gauge_canvas_gauges",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "velocidad",
+                  "type": "timeseries",
+                  "label": "velocidad",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.09118078616532488
+                }
+              ],
+              "entityAliasId": "10f3242b-3ca4-4d06-c52a-399fa9f45d76"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "maxValue": 180,
+            "startAngle": 45,
+            "ticksAngle": 270,
+            "showBorder": false,
+            "defaultColor": "#e65100",
+            "needleCircleSize": 7,
+            "highlights": [
+              {
+                "from": 80,
+                "to": 120,
+                "color": "#fdd835"
+              },
+              {
+                "color": "#e57373",
+                "from": 120,
+                "to": 180
+              }
+            ],
+            "showUnitTitle": false,
+            "colorPlate": "#fff",
+            "colorMajorTicks": "#444",
+            "colorMinorTicks": "#666",
+            "minorTicks": 2,
+            "valueInt": 3,
+            "minValue": 0,
+            "highlightsWidth": 15,
+            "valueBox": true,
+            "animation": true,
+            "animationDuration": 1500,
+            "animationRule": "linear",
+            "colorNeedleShadowUp": "rgba(2, 255, 255, 0)",
+            "colorNeedleShadowDown": "rgba(188, 143, 143, 0.78)",
+            "majorTicksCount": 9,
+            "numbersFont": {
+              "family": "Roboto",
+              "size": 22,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "titleFont": {
+              "family": "Roboto",
+              "size": 24,
+              "style": "normal",
+              "weight": "500",
+              "color": "#888"
+            },
+            "unitsFont": {
+              "family": "Roboto",
+              "size": 28,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "valueFont": {
+              "size": 32,
+              "style": "normal",
+              "weight": "normal",
+              "shadowColor": "rgba(0, 0, 0, 0.49)",
+              "color": "#444",
+              "family": "Segment7Standard"
+            },
+            "colorValueBoxRect": "#888",
+            "colorValueBoxRectEnd": "#666",
+            "colorValueBoxBackground": "#babab2",
+            "colorValueBoxShadow": "rgba(0,0,0,1)"
+          },
+          "title": "Velocidad Viento",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "showTitleIcon": false,
+          "titleIcon": null,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "displayTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "units": "m/s"
+        },
+        "id": "b01bd33b-271b-c6f6-98f0-478cc8831f5b"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Menu Principal",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "8de9e1c2-3bac-eed1-27a7-72af54a2cdd7": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 0,
+                "col": 0
+              },
+              "be1e7c6e-9abf-260b-8c0a-142633a112b2": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 0,
+                "col": 10
+              },
+              "6b43a889-a05f-6abd-b36f-b5775208e9d3": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 3,
+                "col": 0
+              },
+              "89fbcc1d-c92b-e36f-d905-7cbcab7a4530": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 6,
+                "col": 0
+              },
+              "fd5378bf-3f8a-f890-c945-f97cb7bdb917": {
+                "sizeX": 10,
+                "sizeY": 3,
+                "row": 3,
+                "col": 10
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "acelerometro_1": {
+        "name": "Acelerómetro 1",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "41ab0959-d70a-c99b-e828-ad4646b7dd47": {
+                "sizeX": 19,
+                "sizeY": 6,
+                "row": 5,
+                "col": 0
+              },
+              "d6bac0b4-984d-96f4-b590-ebfe3ba39dfd": {
+                "sizeX": 19,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "acelerometro_2": {
+        "name": "Acelerómetro 2",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "03a7e139-5477-5672-8491-2c6b116c28aa": {
+                "sizeX": 17,
+                "sizeY": 6,
+                "row": 5,
+                "col": 0
+              },
+              "fcafc31b-069f-7de0-9778-4581973fd3c9": {
+                "sizeX": 17,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "acelerometro_3": {
+        "name": "Acelerómetro 3",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "5c0b8758-cd7e-9365-1304-659e0c21defc": {
+                "sizeX": 17,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "568cfa04-5090-fe83-3c83-b431461fe236": {
+                "sizeX": 17,
+                "sizeY": 6,
+                "row": 5,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "acelerometro_4": {
+        "name": "Acelerómetro 4",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "6b6760a9-48d7-fe1a-a7fa-f2fc30a80398": {
+                "sizeX": 17,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 0,
+                "col": 0
+              },
+              "f886fa7f-899d-817f-e06e-f7c55ef8e8d1": {
+                "sizeX": 17,
+                "sizeY": 6,
+                "row": 5,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "menu_acelerometros": {
+        "name": "Menu_acelerometros",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "59bd1764-a78c-8811-42b1-c14d7bc3bb05": {
+                "sizeX": 16,
+                "sizeY": 7,
+                "row": 0,
+                "col": 0
+              },
+              "39cdf1b6-b705-6283-dc7d-94614ca86d38": {
+                "sizeX": 16,
+                "sizeY": 5,
+                "mobileHeight": null,
+                "row": 7,
+                "col": 0
+              },
+              "931d839d-a85b-72de-3778-c69c9d586eea": {
+                "sizeX": 7,
+                "sizeY": 7,
+                "row": 0,
+                "col": 16
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "menu_strain_gauges": {
+        "name": "Menu Strain Gauges",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {},
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "menu_lvdt": {
+        "name": "Menu LVDT",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {},
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      },
+      "estacion_climatica": {
+        "name": "Estacion Climatica",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "8e5265f0-de95-e967-e2ba-d0b7ea69eb33": {
+                "sizeX": 5,
+                "sizeY": 4,
+                "row": 4,
+                "col": 14
+              },
+              "1f77bd71-2403-a319-047c-06e33d0aa62a": {
+                "sizeX": 5,
+                "sizeY": 4,
+                "row": 0,
+                "col": 14
+              },
+              "9bf896dd-f1b1-c89c-5253-884a50574a23": {
+                "sizeX": 14,
+                "sizeY": 8,
+                "row": 0,
+                "col": 0
+              },
+              "a5eceeef-60a0-4e50-9626-0d84d0c01f56": {
+                "sizeX": 5,
+                "sizeY": 4,
+                "row": 0,
+                "col": 19
+              },
+              "b01bd33b-271b-c6f6-98f0-478cc8831f5b": {
+                "sizeX": 5,
+                "sizeY": 4,
+                "row": 4,
+                "col": 19
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "ccf2748e-8830-43ab-4fde-b9da93c5ab6c": {
+        "id": "ccf2748e-8830-43ab-4fde-b9da93c5ab6c",
+        "alias": "Acelerometro1",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "cde407b0-1611-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "e2ca1316-9c6c-2843-9146-975df0febbb0": {
+        "id": "e2ca1316-9c6c-2843-9146-975df0febbb0",
+        "alias": "Acelerometro2",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "f3fcd670-1611-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "8e80782f-60e4-2f10-365f-69fcb4c58e59": {
+        "id": "8e80782f-60e4-2f10-365f-69fcb4c58e59",
+        "alias": "Acelerometro3",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "f3fbc500-1611-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "dbcea604-b334-8808-dff3-612f0fed4274": {
+        "id": "dbcea604-b334-8808-dff3-612f0fed4274",
+        "alias": "Acelerometro4",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "f3fde7e0-1611-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "10f3242b-3ca4-4d06-c52a-399fa9f45d76": {
+        "id": "10f3242b-3ca4-4d06-c52a-399fa9f45d76",
+        "alias": "WeatherStation",
+        "filter": {
+          "type": "singleEntity",
+          "resolveMultiple": false,
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "f3fef951-1611-11ea-bdfd-871a13721be3"
+          }
+        }
+      },
+      "292c52d6-9f4d-dc2d-86a3-76200208c60c": {
+        "id": "292c52d6-9f4d-dc2d-86a3-76200208c60c",
+        "alias": "GrupoAcelerometros",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "cde407b0-1611-11ea-bdfd-871a13721be3",
+            "f3fcd670-1611-11ea-bdfd-871a13721be3",
+            "f3fbc500-1611-11ea-bdfd-871a13721be3",
+            "f3fde7e0-1611-11ea-bdfd-871a13721be3"
+          ]
+        }
+      },
+      "5982618d-00b9-ba64-d88e-c954e30bdc93": {
+        "id": "5982618d-00b9-ba64-d88e-c954e30bdc93",
+        "alias": "ActivosAcelerometros",
+        "filter": {
+          "type": "assetType",
+          "resolveMultiple": true,
+          "assetType": "acelerometro",
+          "assetNameFilter": ""
+        }
+      },
+      "aa3d9eda-f512-20bf-0595-6f51aaaf516a": {
+        "id": "aa3d9eda-f512-20bf-0595-6f51aaaf516a",
+        "alias": "DAQ",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityList": [
+            "916a0140-1611-11ea-bdfd-871a13721be3"
+          ]
+        }
+      }
+    },
+    "timewindow": {
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "aggregation": {
+        "type": "MAX",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Puente Chino"
+}
