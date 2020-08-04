@@ -1,0 +1,31 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateCardInView.
+ */]
+[module generateCardInView('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::cards::generateMaxCard /]
+[import braulioqh::vis4bridge::acceleo::files::dash::cards::generateMinCard/]
+[import braulioqh::vis4bridge::acceleo::files::dash::cards::generateAverageCard /]
+[import braulioqh::vis4bridge::acceleo::files::dash::cards::generateAlertCard /]
+
+[**
+ * The documentation of the template generateElement.
+ * @param aCard
+ */]
+[template public generateCardInView(aCard : Card)]
+
+#A div is generated for the card [aCard.id/](contains the card and associated widget)
+        html.Div(['['/]
+[if (aCard.Type.toString().equalsIgnoreCase('AVERAGE'))]
+    [generateAverageCard(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('MIN'))]
+    [generateMinCard(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('MAX'))]
+    [generateMaxCard(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('ALERT_COUNT'))]
+    ['#No alert card funcion'/]
+[/if]
+        [']'/],
+        className='column',
+        id='div-[aCard.id/]'),
+[/template]

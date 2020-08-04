@@ -1,0 +1,33 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateAreaChart.
+ */]
+[module generateAreaChart('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::graphs::generateSelectSensor /]
+
+[**
+ * The documentation of the template generateElement.
+ * @param aGraph
+ */]
+[template public generateAreaChart(aGraph : Graph)]
+[if (aGraph.usergroup->notEmpty())]
+    [for (itUsergroup : UserGroup | self.usergroup)]
+        [generateSelectSensor(itUsergroup)/]
+    [/for]
+[/if]
+        # Div to generate chart and range selection bar
+        html.Div(['['/]
+            dcc.Graph(
+                id='[aGraph.id/]',
+                config=dict(responsive=False),
+            ),
+            dcc.RangeSlider(
+                count=1,
+                min = unixTimeMillis(daterange.min()),#unix_time_millis(time.min()),
+                max = unixTimeMillis(daterange.max()),#unix_time_millis(time.max()),
+                value=['['/]unixTimeMillis(daterange.min()),unixTimeMillis(daterange.max())[']'/],
+                marks=getMarks(daterange.min(),daterange.max()),
+                id='rangeSlider-[aGraph.id/]'
+            ),
+        [']'/]),
+[/template]

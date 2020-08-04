@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateGraphInCallback.
+ */]
+[module generateGraphInCallback('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateLineChartCallback /]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateAreaChartCallback /]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateHistogramCallback /]
+
+[**
+ * The documentation of the template generateGraphInCallback.
+ * @param aGraph
+ */]
+[template public generateGraphInCallback(aGraph : Graph)]
+[if (aGraph.eClass().name.equalsIgnoreCase('LineChart'))]
+[generateLineChartCallback(aGraph)/]
+
+[elseif(aGraph.eClass().name.equalsIgnoreCase('AreaChart'))]
+[generateAreaChartCallback(aGraph)/]
+
+[elseif(aGraph.eClass().name.equalsIgnoreCase('Histogram'))]
+[generateHistogramCallback(aGraph)/]
+
+[/if]
+
+[/template]

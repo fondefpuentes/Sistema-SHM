@@ -1,0 +1,57 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateLineChartCallback.
+ */]
+[module generateAreaChartCallback('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateAreaChartCallback.
+ * @param aGraph
+ */]
+[template public generateAreaChartCallback(aGraph : Graph)]
+@app.callback(
+    Output(component_id='[aGraph.id/]', component_property='figure'),
+    ['['/]
+    [for (itUserGroup : UserGroup | self.usergroup)]
+        [for (itSensor : Sensor | self.basicsensor)]
+     Input(component_id='dropdown-[itSensor.id/]', component_property='value'),
+        [/for]
+    [/for]
+     Input(component_id='rangeSlider-[aGraph.id/]', component_property='value')[']'/]
+)
+def update_grahp([for (itUserGroup : UserGroup | self.usergroup)] [for (itSensor : Sensor | self.basicsensor)]_[itSensor.id.replaceAll('-', '_')/],[/for][/for]_[aGraph.id.replaceAll('-', '_')/]):
+
+    mask=(df['['/]'time'[']'/]>=unixToDatetime(_[aGraph.id.replaceAll('-', '_')/]['['/]0[']'/]).tz_localize(time_zone)) & (df['['/]'time'[']'/]<=unixToDatetime(_[aGraph.id.replaceAll('-', '_')/]['['/]1[']'/]).tz_localize(time_zone))
+    myData=df.loc['['/]mask[']'/]
+    xaxis=myData['['/]'time'[']'/]
+    [for (itUserGroup : UserGroup | self.usergroup)]
+        [for (itSensor : Sensor | self.basicsensor)]
+    y[i/]axis=myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/]
+        [/for]
+    [/for]
+    return dict(
+    data=['['/]
+    [for (itUserGroup : UserGroup | self.usergroup)]
+        [for (itSensor : Sensor | self.basicsensor)]
+        go.Scatter(
+            x=xaxis,
+            y=y[i/]axis,
+            name=str(_[itSensor.id.replaceAll('-', '_')/]),
+            stackgroup='one',
+        ),
+        [/for]
+    [/for]
+    [']'/],
+    layout=dict(
+        title='[aGraph.name/]',
+        showlegend=True,
+        legend=dict(
+            x=0,
+            y=1.0
+        ),
+        margin=dict(l=40, r=0, t=40, b=30),
+        transition = {'duration': 500},
+    )
+)
+[/template]

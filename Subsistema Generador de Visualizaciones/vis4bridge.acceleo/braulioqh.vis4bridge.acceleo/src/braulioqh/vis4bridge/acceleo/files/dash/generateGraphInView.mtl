@@ -1,0 +1,28 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateGraphInView.
+ */]
+[module generateGraphInView('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::graphs::generateLineChart /]
+[import braulioqh::vis4bridge::acceleo::files::dash::graphs::generateAreaChart /]
+[import braulioqh::vis4bridge::acceleo::files::dash::graphs::generateHistogram /]
+
+[**
+ * The documentation of the template generateElement.
+ * @param aGraph
+ */]
+[template public generateGraphInView(aGraph : Graph)]
+
+#A div is generated for the chart [aGraph.id/](contains the chart and associated widget)
+        html.Div(['['/]
+[if (aGraph.eClass().name.equalsIgnoreCase('LineChart'))]
+    [generateLineChart(aGraph)/]
+[elseif(aGraph.eClass().name.equalsIgnoreCase('AreaChart'))]
+    [generateAreaChart(aGraph)/]
+[elseif(aGraph.eClass().name.equalsIgnoreCase('Histogram'))]
+    [generateHistogram(aGraph)/]
+[/if]
+        [']'/],
+        className='[aGraph.eClass().name/] graph',
+        id='div-[aGraph.id/]'),
+[/template]

@@ -1,0 +1,30 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateLineChartCallback.
+ */]
+[module generateAverageCardCallback('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateAverageCardCallback.
+ * @param aCard
+ */]
+[template public generateAverageCardCallback(aCard : Card)]
+@app.callback(
+    Output(component_id='[aCard.id/]',component_property='children'),
+    ['['/]
+     Input(component_id='dropdown-[aCard.id/]', component_property='value')
+    [']'/]
+)
+def update_card(_sensor_[aCard.id.replaceAll('-', '_')/]):
+    #mask=(df['['/]'time'[']'/]>= unixToDatetime(df['['/]'time'[']'/].min().tz_localize(time_zone)) & (df['['/]'time'[']'/]<=unixToDatetime(df['['/]'time'[']'/].max().tz_localize(time_zone)))
+    mask=(df['['/]'time'[']'/]>=df['['/]'time'[']'/].min())& (df['['/]'time'[']'/]<=df['['/]'time'[']'/].max())
+    myData=df.loc['['/]mask[']'/]
+    xaxis=myData['['/]'time'[']'/]
+    y1axis=myData['['/]_sensor_[aCard.id.replaceAll('-', '_')/][']'/]
+    my_average=myData['['/]_sensor_[aCard.id.replaceAll('-', '_')/][']'/].mean()
+    return ['['/]
+        html.H3('MEAN'),
+        html.P(my_average),
+    [']'/]
+[/template]
