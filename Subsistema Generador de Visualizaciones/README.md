@@ -1,5 +1,5 @@
 # Vis4bridge Application
-*Read this in other languages: [English] (README.md), [Español] (README.es.md)*
+*Read this in other languages: [English](README.md), [Español](README.es.md)*
 ## Description
 In this repository there are 3 sub-repositories necessary to build the Vis4bridge application.
 These repositories are:
