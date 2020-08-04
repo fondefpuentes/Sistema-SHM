@@ -1,0 +1,23 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateCallbackFunction.
+ */]
+[module generateCallbackFunction('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateGraphInCallback /]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateCardInCallback /]
+[**
+ * The documentation of the template generateCallbackFunction.
+ * @param aView
+ */]
+[template public generateCallbackFunction(aView : View)]
+[if (aView.card->notEmpty())]
+    [for (itCard : Card | card)]
+[generateCardInCallback(itCard)/]
+    [/for]
+[/if]
+[if (aView.graph->notEmpty())]
+    [for (itGraph : Graph | graph)]
+[generateGraphInCallback(itGraph)/]
+    [/for]
+[/if]
+[/template]

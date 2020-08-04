@@ -1,0 +1,115 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateCss.
+ */]
+[module generateCss('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateCss.
+ * @param aVis4bridge
+ */]
+[template public generateCss(aVis4bridge : Vis4bridge)]
+[file ('assets/custom.css', false, 'UTF-8')]
+/*
+
+CSS file for app.py
+You can modify or add new CSS code in order to customize style for your app
+
+*/
+/*Body background #BBBBBB*/
+body{
+  background: #F9F9F9;
+
+}
+H1{
+    text-align: center;
+}
+H2{
+    text-align: center;
+}
+.sensor{
+  display: inline-block;
+  width: 110px;
+}
+/*
+.view-graph{
+  background:#F9F9F9;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+*/
+
+.view-graph{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.graph{
+  margin: 2%;
+  padding: 2%;
+  height: auto;
+  background:#DEDEDE;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 5px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 20px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/*
+.graph{
+
+  width: 40%;
+  margin: 2%;
+  padding: 10px;
+  background:#FFFFFF;
+  flex-grow:1;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+
+}*/
+/*
+#div-histogram-3{
+  display: inline-block;;
+  width: 40%;
+  margin: 2%;
+  padding: 5px;
+  background:#FFFFFF;
+
+}
+*/
+
+
+
+[/file]
+[/template]

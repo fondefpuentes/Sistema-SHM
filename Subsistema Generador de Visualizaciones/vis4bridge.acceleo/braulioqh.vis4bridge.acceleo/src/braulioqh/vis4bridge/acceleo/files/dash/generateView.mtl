@@ -1,0 +1,40 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateView.
+ */]
+[module generateView('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateGraphInView /]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateCardInView /]
+[**
+ * The documentation of the template generateView.
+ * @param aView
+ */]
+[template public generateView(aView : View)]
+    #A Div is generated for each view
+    html.Div(['['/]
+        html.H2(children='''
+            [aView.name/]
+        '''),
+        html.Div(['['/]
+[if (aView.card->notEmpty())]
+    [for (itCard : Card | card)]
+        [generateCardInView(itCard)/]
+    [/for]
+[/if]
+        [']'/],
+        className='view-card row',
+        id='card-[aView.id/]'),
+
+        html.Div(['['/]
+[if (aView.graph->notEmpty())]
+    [for (itGraph : Graph | graph)]
+        [generateGraphInView(itGraph)/]
+    [/for]
+[/if]
+        [']'/],
+        className='view-graph',
+        id='graph-[aView.id/]'),
+    [']'/],
+    className='view',
+    id='div-[aView.id/]'),
+[/template]

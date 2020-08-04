@@ -1,0 +1,112 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateDashCode.
+ */]
+[module generateDashCode('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateView /]
+[import braulioqh::vis4bridge::acceleo::files::dash::generateCallbackFunction /]
+[**
+ * The documentation of the template generateDashCode.
+ * @param aVis4bridge
+ */]
+[template public generateDashCode(aVis4bridge : Vis4bridge)]
+[file ('app.py', false, 'UTF-8')]
+[initialStaticContent(aVis4bridge)/]
+
+# The component tree is defined using app.layout
+app.layout = html.Div(children=['['/]
+    html.H1(children='Bridge DashBoard'),
+
+[for (itView : View | self.view)]
+[generateView(itView)/]
+[/for]
+[']'/],
+id='visualization')
+
+[for (itView : View | self.view)]
+[generateCallbackFunction(itView)/]
+[/for]
+
+# Allows to run the application
+if __name__ == '__main__':
+    app.run_server(debug=True)
+[/file]
+[/template]
+[template private initialStaticContent(aVis4bridge : Vis4bridge)]
+    # -*- coding: utf-8 -*-
+# ---------- Libraries --------------
+# base library for dash
+import dash
+import dash_core_components as dcc #contains base dash components
+import dash_html_components as html #Contains the html tags
+import plotly.express as px
+import plotly.graph_objs as go
+import pandas as pd #For data management
+from dash.dependencies import Input, Output #For callbacks
+import numpy as np #For data processing. ex: To pass data from matlab to pandas
+from scipy.io import loadmat as lm #To load matlab data
+import calendar #For handling dates
+import psycopg2 #For connection to the database
+import psycopg2.extras
+import getpass #For entering passwords
+
+
+# ---------- EXTERNAL CSS --------------
+# external css
+external_stylesheets = ['['/]'https://codepen.io/chriddyp/pen/bWLwgP.css'[']'/]
+
+#------------ LOADING DATA-------------
+#The data that will be processed with pandas is loaded
+#mat = lm('/home/braulio/Documentos/workspace/python/pruebasDash/d_08_2_1_1.mat')
+#df = pd.DataFrame(np.stack((mat['['/]'Data'[']'/])))
+#df['['/]'time'[']'/]= pd.to_datetime(df['['/]'time'[']'/], format='%Y%m%d%H%M%S')
+
+# connection to the database
+
+pw = getpass.getpass();
+# establish connection
+conn = psycopg2.connect(dbname='tutorial', user='postgres', password=pw, host='localhost')
+
+# cursor object allows querying of database
+# server-side cursor is created to prevent records to be downloaded until explicitly fetched
+cursor_datasetBridge = conn.cursor('datasetBridge', cursor_factory=psycopg2.extras.DictCursor)
+cursor_datasetBridge.execute("SELECT * FROM datasetPuente WHERE time BETWEEN '2008-03-31 23:00' and '2008-03-31 23:59'")
+
+# fetch records from database
+ride_length_datasetBridge = cursor_datasetBridge.fetchall()
+
+df = pd.DataFrame(np.array(ride_length_datasetBridge),
+ columns = ['['/]'time', 'sensor_01','sensor_02','sensor_03','sensor_04','sensor_05','sensor_06','sensor_07','sensor_08','sensor_09','sensor_10','sensor_11','sensor_12','sensor_13','sensor_14','sensor_15','sensor_16'[']'/])
+
+
+daterange = pd.date_range(start=df['['/]'time'[']'/].min(),end=df['['/]'time'[']'/].max(),freq='T')
+sensor=list(df)['['/]1:[']'/]
+time_zone = 'Etc/GMT+4'
+
+#------------- INIT APP ----------------
+# The app is initialized
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+#---------- LOCAL FUNCTIONS ------------
+#general functions
+def unixTimeMillis(dt):
+    ''' Convert datetime to unix timestamp '''
+    return calendar.timegm(dt.timetuple())
+
+def unixToDatetime(unix):
+    ''' Convert unix timestamp to datetime. '''
+    return pd.to_datetime(unix,unit='s',origin='unix')
+
+def getMarks(start, end, Nth=100):
+    ''' Returns the marks for labeling.
+        Every Nth value will be used.
+    '''
+
+    result = {}
+    for i, date in enumerate(daterange):
+        if(i%Nth == 1):
+            # Append value to dict
+            result['['/]unixTimeMillis(date)[']'/] = str(date.strftime('%Y-%m-%d'))
+
+    return result
+[/template]

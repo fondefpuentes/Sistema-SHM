@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="braulioqh.vis4bridge.design.Activator"
+               id="braulioqh.vis4bridge.design"
+	       name="vis4bridge">
+    </component>
+  </extension>
+</plugin>

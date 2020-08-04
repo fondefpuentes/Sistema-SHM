@@ -1,0 +1,78 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateLineChartCallback.
+ */]
+[module generateHistogramCallback('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateLineChartCallback.
+ * @param aGraph
+ */]
+[template public generateHistogramCallback(aGraph : Graph)]
+@app.callback(
+    Output(component_id='[aGraph.id/]', component_property='figure'),
+    ['['/]
+    [for (itUserGroup : UserGroup | self.usergroup)]
+        [for (itSensor : Sensor | self.basicsensor)]
+     Input(component_id='dropdown-[itSensor.id/]', component_property='value'),
+        [/for]
+    [/for]
+    [for (itSensor : Sensor | self.sensor)]
+     Input(component_id='dropdown-[itSensor.id/]', component_property='value'),
+    [/for]
+     Input(component_id='rangeSlider-[aGraph.id/]', component_property='value'),
+     Input(component_id='bin-slider-[aGraph.id/]', component_property='value'),
+     Input(component_id='bin-auto-[aGraph.id/]', component_property='value'),[']'/]
+)
+def update_graph([for (itUserGroup : UserGroup | self.usergroup)][for (itSensor : Sensor | self.basicsensor)]_[itSensor.id.replaceAll('-', '_')/],[/for][/for]_[aGraph.id.replaceAll('-', '_')/],bin_value,auto_state):
+
+    mask=(df['['/]'time'[']'/]>=unixToDatetime(_[aGraph.id.replaceAll('-', '_')/]['['/]0[']'/]).tz_localize(time_zone)) & (df['['/]'time'[']'/]<=unixToDatetime(_[aGraph.id.replaceAll('-', '_')/]['['/]1[']'/]).tz_localize(time_zone))
+    myData=df.loc['['/]mask[']'/]
+
+    xaxis=myData['['/]'time'[']'/]
+    [for (itUserGroup : UserGroup | self.usergroup)]
+        [for (itSensor : Sensor | self.basicsensor)]
+    y[i/]axis=myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/]
+    if "Auto" in auto_state:
+        hist[i/],bins[i/]=np.histogram(myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/],range(int(round(min(myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/]))), int(round(max(myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/])))))
+    else:
+        hist[i/],bins[i/]=np.histogram(myData['['/]_[itSensor.id.replaceAll('-', '_')/][']'/], bins=bin_value)
+
+        [/for]
+    [/for]
+
+    return dict(
+        data=['['/]
+        [for (itUserGroup : UserGroup | self.usergroup)]
+            [for (itSensor : Sensor | self.basicsensor)]
+            dict(
+                x=bins[i/],
+                y=hist[i/],
+                name=str(_[itSensor.id.replaceAll('-', '_')/]),
+                type='[if (aGraph.eClass().name.equalsIgnoreCase('Histogram'))]bar[/if]',
+            ),
+            [/for]
+        [/for]
+        [for (itSensor : Sensor | self.sensor)]
+            dict(
+                x=bins[i/],
+                y=hist[i/],
+                name=str(_[itSensor.id.replaceAll('-', '_')/]),
+                type='[if (aGraph.eClass().name.equalsIgnoreCase('Histogram'))]bar[/if]',
+            ),
+        [/for]
+        [']'/],
+        layout=dict(
+            title='[aGraph.name/]',
+            barmode='stack',
+            showlegend=True,
+            legend=dict(
+                x=0,
+                y=1.0
+            ),
+            margin=dict(l=40, r=0, t=40, b=30),
+            transition = {'duration': 500},
+        )
+    )
+[/template]

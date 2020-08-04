@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="vis4bridge" nsURI="https://gitlab.com/braulioqh/vis4bridge.git"
+    nsPrefix="vis4bridge">
+  <eClassifiers xsi:type="ecore:EClass" name="Vis4bridge">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Vis4bridge is the root class of the metamodel, this class is made up of the main elements of the model. The elements are divided into two large groups.&#xA;&#xA;On the one hand there are the elements that deliver information, such as sensors, weather station or other groups of sensors. On the other hand, there are the visual elements that will be generated from this information. Within the visual elements are the views (see), graphs (aka chart) tables and cards.&#xA;Attributes:&#xA;name: Name of the application. *&#xA;&#xA;* All classes have an attribute called name. this attribute is used by sirius to give a default name to the class label."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="visualization" upperBound="-1"
+        eType="#//Visualization" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="view" upperBound="-1" eType="#//View"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" upperBound="-1"
+        eType="#//Sensor" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="daq" upperBound="-1" eType="#//DAQ"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usergroup" upperBound="-1"
+        eType="#//UserGroup" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Visualization">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BasicSensor" abstract="true" eSuperTypes="#//Sensor">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Representa un acelerómetro de 3 ejes. (si se quiere representar un accelerometro de 1 o 2 ejes solo omita las coordenadas correspondientes).&#xA;&#xA;x: Indica que se considerarán los datos del eje x.&#xA;y: Indica que se considerarán los datos del eje y.&#xA;z: Indica que se considerarán los datos del eje z."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" upperBound="-1"
+        eType="#//Graph" eOpposite="#//Graph/sensor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="card" upperBound="-1" eType="#//Card"
+        eOpposite="#//Card/basicsensor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TriAxisAccelerometer" eSuperTypes="#//BasicSensor">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="TriAxisAccelerometer representa un acelerometro de 3 ejes, también puede usarse para representar un acelerometro de 1 o 2 ejes.&#xA;x: Indica que se considerarán los datos del eje x.&#xA;y: Indica que se considerarán los datos del eje y.&#xA;z: Indica que se considerarán los datos del eje z."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="y" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="z" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Temperature" eSuperTypes="#//BasicSensor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LineChart" eSuperTypes="#//Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AreaChart" eSuperTypes="#//Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="View">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vis4bridge es la clase raíz del metamodelo.&#xA;Esta clase esta compuesta por los elementos del dominio.&#xA;Por una parte se encuentran los sensores (sensors conectados al puente y grupos de sensores. Por otro lado, se encuentran "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" upperBound="-1"
+        eType="#//Graph" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" upperBound="-1"
+        eType="#//Table" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="card" upperBound="-1" eType="#//Card"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" upperBound="-1"
+        eType="#//Filter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compoundsensor" eType="#//CompoundSensor"
+        eOpposite="#//CompoundSensor/view"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeRange" eType="#//TimeRange"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Histogram" eSuperTypes="#//Graph">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bis" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bisAuto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scatter" eSuperTypes="#//Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Graph" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" upperBound="-1"
+        eType="#//BasicSensor" eOpposite="#//BasicSensor/graph"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" upperBound="-1"
+        eType="#//GraphCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usergroup" eType="#//UserGroup"
+        eOpposite="#//UserGroup/graph"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Table">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WeatherStation" eSuperTypes="#//CompoundSensor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StrainGauge" eSuperTypes="#//BasicSensor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Volt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Card">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//CardType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basicsensor" eType="#//BasicSensor"
+        eOpposite="#//BasicSensor/card"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usergroup" eType="#//UserGroup"
+        eOpposite="#//UserGroup/card"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Date" eSuperTypes="#//Filter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FFT" eSuperTypes="#//Filter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LowPass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="HighPass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="BandPass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Filter" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CompoundSensor" abstract="true" eSuperTypes="#//Sensor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basicsensor" upperBound="-1"
+        eType="#//BasicSensor" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="view" eType="#//View" eOpposite="#//View/compoundsensor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensor" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Representa un acelerómetro de 3 ejes. (si se quiere representar un accelerometro de 1 o 2 ejes solo omita las coordenadas correspondientes).&#xA;&#xA;x: Indica que se considerarán los datos del eje x.&#xA;y: Indica que se considerarán los datos del eje y.&#xA;z: Indica que se considerarán los datos del eje z."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DAQ">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensor" upperBound="-1"
+        eType="#//Sensor" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LDVT" eSuperTypes="#//BasicSensor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Inclinometer" eSuperTypes="#//BasicSensor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="data" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CardType">
+    <eLiterals name="AVERAGE"/>
+    <eLiterals name="MIN" value="1"/>
+    <eLiterals name="MAX" value="2"/>
+    <eLiterals name="ALERT_COUNT" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeRange">
+    <eLiterals name="ONE_HOUR"/>
+    <eLiterals name="TWELVE_HOURS" value="1"/>
+    <eLiterals name="ONE_DAY" value="2"/>
+    <eLiterals name="SEVEN_DAYS" value="3"/>
+    <eLiterals name="FOURTEEN_DAYS" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BoxPlot" eSuperTypes="#//Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OHLC" eSuperTypes="#//Graph"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="GraphCategory">
+    <eLiterals name="COMPARISON"/>
+    <eLiterals name="PROPORTION" value="1"/>
+    <eLiterals name="RELATIONSHIP" value="2"/>
+    <eLiterals name="HIERARCHY" value="3"/>
+    <eLiterals name="CONCEPT" value="4"/>
+    <eLiterals name="LOCATION" value="5"/>
+    <eLiterals name="PART_TO_A_WHOLE" value="6"/>
+    <eLiterals name="DISTRIBUTION" value="7"/>
+    <eLiterals name="HOW_THINGS_WORK" value="8"/>
+    <eLiterals name="PROCESSES_AND_METHODS" value="9" literal="PROCESSES_AND_METHODS"/>
+    <eLiterals name="MOVEMENT_OR_FLOW" value="10"/>
+    <eLiterals name="PATTERNS" value="11"/>
+    <eLiterals name="RANGE" value="12"/>
+    <eLiterals name="DATE_OVER_TIME" value="13"/>
+    <eLiterals name="ANALISYNG_TEXT" value="14" literal="ANALISYNG_TEXT"/>
+    <eLiterals name="REFERENCE_TOOL" value="15"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UserGroup">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basicsensor" upperBound="-1"
+        eType="#//BasicSensor" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graph" eType="#//Graph"
+        eOpposite="#//Graph/usergroup"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="card" eType="#//Card" eOpposite="#//Card/usergroup"/>
+  </eClassifiers>
+</ecore:EPackage>

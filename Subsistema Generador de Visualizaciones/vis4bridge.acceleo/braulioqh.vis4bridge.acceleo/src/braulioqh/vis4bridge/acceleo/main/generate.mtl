@@ -1,0 +1,17 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+[import braulioqh::vis4bridge::acceleo::files::generateCss /]
+[import braulioqh::vis4bridge::acceleo::files::generateDashCode /]
+[**
+ * The documentation of the template generateElement.
+ * @param aVis4bridge
+ */]
+[template public generateElement(aVis4bridge : Vis4bridge)]
+[comment @main/]
+[generateCss(aVis4bridge)/]
+[generateDashCode(aVis4bridge)/]
+[/template]
