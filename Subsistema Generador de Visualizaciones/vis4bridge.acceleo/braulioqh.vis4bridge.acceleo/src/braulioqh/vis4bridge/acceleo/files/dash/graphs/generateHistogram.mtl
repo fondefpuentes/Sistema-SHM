@@ -1,0 +1,67 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateLineChart.
+ */]
+[module generateHistogram('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::graphs::generateSelectSensor /]
+
+[**
+ * The documentation of the template generateElement.
+ * @param aGraph
+ */]
+[template public generateHistogram(aGraph : Graph)]
+[if (aGraph.usergroup->notEmpty())]
+    [for (itUsergroup : UserGroup | self.usergroup)]
+        [generateSelectSensor(itUsergroup)/]
+    [/for]
+[/if]
+            html.Div(['['/]
+                html.Div(['['/]
+                    dcc.Slider(
+                        id='bin-slider-[aGraph.id/]',
+                        min=1,
+                        max=40,
+                        step=1,
+                        value=12,
+                        updatemode='drag',
+                        marks={
+                            10:{'label': '10'},
+                            20:{'label': '20'},
+                            30:{'label': '30'},
+                            40:{'label': '40'},
+                        },
+                    ),
+                [']'/]),
+                html.Div(['['/]
+                    dcc.Checklist(
+                        id='bin-auto-[aGraph.id/]',
+                        options=['['/]
+                            {'label':'Auto','value':'Auto'}
+                        [']'/],
+                        value=['['/]'Auto'[']'/],
+                        inputClassName='auto__checkbox',
+                        labelClassName='auto__label',
+                    ),
+                    html.P(
+                            '# of Bins: Auto',
+                            id='bin-size-[aGraph.id/]',
+                            className='auto__p',
+                            ),
+                [']'/],style={'display':'inline'}),
+                html.Div(['['/]
+                    dcc.Graph(
+                        id='[aGraph.id/]',
+                        config=dict(responsive=False),
+                    ),
+                    dcc.RangeSlider(
+                                    count=1,
+                                    min = unixTimeMillis(daterange.min()),#unix_time_millis(time.min()),
+                                    max = unixTimeMillis(daterange.max()),#unix_time_millis(time.max()),
+                                    value=['['/]unixTimeMillis(daterange.min()),unixTimeMillis(daterange.max())[']'/],
+                                    marks=getMarks(daterange.min(),daterange.max()),
+                                    id='rangeSlider-[aGraph.id/]'
+                                ),
+                [']'/]),
+            [']'/],className='Div-slider',
+            style={'display':'block'}),
+[/template]

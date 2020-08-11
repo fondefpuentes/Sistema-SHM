@@ -1,0 +1,28 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateCardInCallback.
+ */]
+[module generateCardInCallback('https://gitlab.com/braulioqh/vis4bridge.git')]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateMaxCardCallback/]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateMinCardCallback/]
+[import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateAverageCardCallback/]
+[**import braulioqh::vis4bridge::acceleo::files::dash::callbacks::generateAlertCardCallback/]
+
+[**
+ * The documentation of the template generateCardInCallback.
+ * @param aCard
+ */]
+[template public generateCardInCallback(aCard : Card)]
+
+[if (aCard.Type.toString().equalsIgnoreCase('MAX'))]
+[generateMaxCardCallback(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('AVERAGE'))]
+[generateAverageCardCallback(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('MIN'))]
+[generateMinCardCallback(aCard)/]
+[elseif(aCard.Type.toString().equalsIgnoreCase('ALERT_COUNT'))]
+['#generateMaxCardCallback(aCard)'/]
+
+[/if]
+
+[/template]

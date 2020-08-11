@@ -1,0 +1,34 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateMaxCard.
+ */]
+[module generateAlertCard('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateAlertCard.
+ * @param aCard
+ */]
+[template public generateAlertCard(aCard : Card)]
+#            html.Div(['['/]
+                # A Div is generated for the selection of sensors
+                html.Div(['['/]
+                    #Se genera un Dropdown por cada sensor
+                    html.Div(['['/]
+                        dcc.Dropdown(
+                        id='dropdown-[aCard.id/]',
+                        options=['['/]{'label':str(i),'value': i} for i in sensor[']'/],
+                        value='sensor_01'
+                        ),
+                    [']'/],
+                    id='div-sensor-[aCard.id/]',
+                    className='sensor'),
+                [']'/],
+                id='div-group-[aCard.id/]',
+                className='group'),
+                html.Div(['['/]
+                    html.H3(['['/]'ALERT']),
+                    html.P(['['/]'']),
+                [']'/],id='[aCard.id/]',className='card'),
+#            [']'/],className='[aCard.eClass().name/]'),
+[/template]

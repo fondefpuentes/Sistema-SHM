@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/vis4bridge/src-gen" creationIcons="false" editDirectory="/vis4bridge.edit/src-gen"
+    editorDirectory="/vis4bridge.editor/src-gen" modelPluginID="vis4bridge" modelName="Vis4bridge"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>vis4bridge.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Vis4bridge" disposableProviderFactory="true" ecorePackage="vis4bridge.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="vis4bridge.ecore#//CardType">
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//CardType/AVERAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//CardType/MIN"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//CardType/MAX"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//CardType/ALERT_COUNT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="vis4bridge.ecore#//TimeRange">
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//TimeRange/ONE_HOUR"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//TimeRange/TWELVE_HOURS"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//TimeRange/ONE_DAY"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//TimeRange/SEVEN_DAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//TimeRange/FOURTEEN_DAYS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="vis4bridge.ecore#//GraphCategory">
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/COMPARISON"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/PROPORTION"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/RELATIONSHIP"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/HIERARCHY"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/CONCEPT"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/LOCATION"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/PART_TO_A_WHOLE"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/DISTRIBUTION"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/HOW_THINGS_WORK"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/PROCESSES_AND_METHODS"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/MOVEMENT_OR_FLOW"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/PATTERNS"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/RANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/DATE_OVER_TIME"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/ANALISYNG_TEXT"/>
+      <genEnumLiterals ecoreEnumLiteral="vis4bridge.ecore#//GraphCategory/REFERENCE_TOOL"/>
+    </genEnums>
+    <genClasses ecoreClass="vis4bridge.ecore#//Vis4bridge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Vis4bridge/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Vis4bridge/visualization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Vis4bridge/view"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Vis4bridge/sensor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Vis4bridge/daq"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Vis4bridge/usergroup"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Visualization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Visualization/name"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//BasicSensor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//BasicSensor/graph"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//BasicSensor/card"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//TriAxisAccelerometer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//TriAxisAccelerometer/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//TriAxisAccelerometer/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//TriAxisAccelerometer/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//TriAxisAccelerometer/z"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Temperature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Temperature/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Temperature/temperature"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//LineChart"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//AreaChart"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//View">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//View/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//View/graph"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//View/table"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//View/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//View/card"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//View/filter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//View/compoundsensor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//View/timeRange"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Histogram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Histogram/bis"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Histogram/bisAuto"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Scatter"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//Graph">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Graph/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Graph/sensor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Graph/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Graph/category"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Graph/usergroup"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Table">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Table/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Table/id"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//WeatherStation"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//StrainGauge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//StrainGauge/Volt"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Card">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Card/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Card/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Card/Type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Card/basicsensor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//Card/usergroup"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Date">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Date/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Date/max"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//FFT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//FFT/LowPass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//FFT/HighPass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//FFT/BandPass"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Filter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Filter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Filter/id"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//CompoundSensor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//CompoundSensor/basicsensor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//CompoundSensor/length"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//CompoundSensor/view"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="vis4bridge.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Sensor/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Sensor/id"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//DAQ">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//DAQ/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//DAQ/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//DAQ/sensor"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//LDVT">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//LDVT/data"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//Inclinometer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//Inclinometer/data"/>
+    </genClasses>
+    <genClasses ecoreClass="vis4bridge.ecore#//BoxPlot"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//OHLC"/>
+    <genClasses ecoreClass="vis4bridge.ecore#//UserGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//UserGroup/basicsensor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//UserGroup/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute vis4bridge.ecore#//UserGroup/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//UserGroup/graph"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference vis4bridge.ecore#//UserGroup/card"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,32 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateSelectSensor.
+ */]
+[module generateSelectSensor('https://gitlab.com/braulioqh/vis4bridge.git')]
+
+
+[**
+ * The documentation of the template generateSelectSensor.
+ * @param anUserGroup
+ */]
+[template public generateSelectSensor(anUserGroup : UserGroup)]
+    [if (anUserGroup.basicsensor->notEmpty())]
+            # A Div is generated for the selection of sensors
+            html.Div(['['/]
+                    [for (itSensor : BasicSensor | self.basicsensor)]
+                #Se genera un Dropdown por cada sensor
+                html.Div(['['/]
+                    dcc.Dropdown(
+                    id='dropdown-[itSensor.id/]',
+                    options=['['/]{'label':str(i),'value': i} for i in sensor[']'/],
+                    value='sensor_0[i/]'
+                    ),
+                [']'/],
+                id='div-[itSensor.id/]',
+                className='sensor'),
+                    [/for]
+            [']'/],
+            id='div-[anUserGroup.id/]',
+            className='group'),
+    [/if]
+[/template]
