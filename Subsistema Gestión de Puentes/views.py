@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, session, flash, request, redirect, url_for, send_file
 from werkzeug.security import generate_password_hash, check_password_hash
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import  FileStorage
 from models import *
 from flask_login import login_user, login_required, current_user, logout_user
 import sys
@@ -117,7 +118,7 @@ def login():
             return redirect(url_for('views_api.usuario_no_autorizado'))
 
 #Crea nuevos usuarios en la plataforma, requiere de correo (primary_key), nombre, apellido y permisos
-@views_api.route('/signup')
+@views_api.route('/signup', methods=["GET","POST"])
 def signup():
     if current_user.is_authenticated:
         return redirect(url_for('views_api.usuario_no_autorizado'))
